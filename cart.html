@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
+	<title>Cart</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/adaptive.css">
+	<script src="https://kit.fontawesome.com/a52b01751d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<header class="header center">
+		<div class="header__left">
+			<a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+			<a href="#"><img class="header__search" src="img/search.svg" alt="search"></a>
+		</div>
+		<div class="header__right">
+			<input id="switcher" type="checkbox">
+			<label for="switcher"><img src="img/menu.svg" alt="menu"></label>
+			<nav class="drop">
+				<div class="header__box header__box_nav">
+					<a href="registration.html"><img class="header__account" src="img/account.svg" alt="account"></a>
+					<a href="cart.html"><img src="img/cart.svg" alt="cart"></a>
+				</div>
+				<span class="drop__name">MENU</span>
+				<div class="drop__box">
+					<a class="drop__heading" href="catalog.html">MAN</a>
+					<ul class="drop__ul">
+						<li><a class="drop__link" href="#">Accessories</a></li>
+						<li><a class="drop__link" href="#">Bags</a></li>
+						<li><a class="drop__link" href="#">Denim</a></li>
+						<li><a class="drop__link" href="#">T-Shirts</a></li>
+					</ul>
+				</div>
+				<div class="drop__box">
+					<a class="drop__heading" href="catalog.html">WOMAN</a>
+					<ul class="drop__ul">
+						<li><a class="drop__link" href="#">Accessories</a></li>
+						<li><a class="drop__link" href="#">Jackets & Coats</a></li>
+						<li><a class="drop__link" href="#">Polos</a></li>
+						<li><a class="drop__link" href="#">T-Shirts</a></li>
+						<li><a class="drop__link" href="#">Shirts</a></li>
+					</ul>
+				</div>
+				<div class="drop__box">
+					<a class="drop__heading" href="catalog.html">KIDS</a>
+					<ul class="drop__ul">
+						<li><a class="drop__link" href="#">Accessories</a></li>
+						<li><a class="drop__link" href="#">Jackets & Coats</a></li>
+						<li><a class="drop__link" href="#">Polos</a></li>
+						<li><a class="drop__link" href="#">T-Shirts</a></li>
+						<li><a class="drop__link" href="#">Bags</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="header__box">
+				<a href="registration.html"><img class="header__account" src="img/account.svg" alt="account"></a>
+				<a href="cart.html"><img src="img/cart.svg" alt="cart"></a>
+			</div>
+			
+		</div>
+	</header>
+
+	<section class="navigation center">
+		<div class="navigation__left">
+			<h2 class="present__navigation__text">SHOPPING CART</h2>
+		</div>
+
+		<nav class="navigation__right">
+		<!-- 	<a href="index.html" class="navigation__text">HOME</a>
+			<a href="#" class="navigation__text"> MEN</a>
+			<a href="#" class="navigation__text">NEW ARRIVALS</a> -->
+		</nav>
+	</section>
+	
+	
+	<section class="order-box center">
+		<div class="order-box_product">
+			<div class="order-box_product__card">
+				<div class="order_product__image">
+					<img class="product_cart_image" src="img/order_1.jpg" alt="order_1_picture">
+				</div>				
+				<div class="card__content_cart">
+						<h3 class="card__content__heading"><a href="product.html">MANGO PEOPLE T-SHIRT</a></h3>
+						<img class="close-symbol" src="img/Close_symbo.svg" alt="close">					
+					<div class="card__content__info">
+						<span>Price:</span><span class="price_color"> $300</span>
+						<p>Color: Red</p>
+						<p>Size: XL</p>
+						<p>Quantity: <input class="product-quantity" type="number" min="1" max="10" value="2"></p>
+					</div>					
+				</div>
+			</div>
+			<div class="order-box_product__card">
+				<div class="order_product__image">
+					<img class="product_cart_image" src="img/order_2.jpg" alt="order_2_picture">
+				</div>
+				<div class="card__content_cart">
+					<h3 class="card__content__heading"><a href="product.html">MANGO PEOPLE T-SHIRT</a></h3>
+					<img class="close-symbol" src="img/Close_symbo.svg" alt="close">
+					<div class="card__content__info">
+						<span>Price:</span><span class="price_color"> $300</span>
+						<p>Color: Red</p>
+						<p>Size: XL</p>
+						<p>Quantity: <input class="product-quantity" type="number" min="1" max="10" value="2"></p>
+					</div>					
+				</div>
+			</div>
+
+			<div class="order-box_product__buttons">
+				<button class="shopping_button">CLEAR SHOPPING CART</button>
+				<button class="shopping_button">CONTINUE SHOPPING</button>
+			</div>
+		</div>
+
+		<section class="order-box_form">
+			
+			<div class="order-box_form__contact">
+				<h4 class="contact__fields__heading">SHOPPING ADRESS</h4>
+				<form class="contact__fields">
+					<input  class="entering_field" placeholder="Geneva">
+					<input  class="entering_field" placeholder="State">
+					<input  class="entering_field" placeholder="Postcode / Zip">
+				</form>
+				<button type="submit" class="quate_button">GET A QUOTE</button>
+			</div>
+			<div class="order_calculation">
+				<div class="sub_total_sum">
+					<span>SUB TOTAL </span><span> $ 900</span>
+				</div>
+				<div class="grand_total_sum">
+					<span>GRAND TOTAL </span><span class="price_color"> $ 900</span>
+				</div>
+				<div class="line"></div>
+				<button class="proceed_button">PROCEED TO CHECKOUT</button>
+			</div>
+		</section>
+	</section>
+
+
+
+	
+
+	<footer class="footer">
+		<div class="top_footer center">
+			<div class="top_footer__left">
+				<img class="girl_photo" src="img/Intersect.png" alt="girl_pic">
+				<p class="footer__text">Vestibulum quis porttiot dui! Quisque viverra nunc mi, a pulvira purus.</p>
+			</div>
+			<div class="top_footer__right">
+				<h3 class="footer__heading">SUBSCRIBE</h3>
+				<p class="footer__right__text">FOR OUR NEW LETTER AND PROMOTION</p>
+				<form class="email_field">
+					<input type="email" class="field" placeholder="Enter Your Mail">
+					<button type="submit" class="subscribe__button">Subscribe</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="low_footer center">
+			<div class="low_footer__left">
+				<p class="footer__copy_text">&copy 2021 Brand All rights reserved</p>
+			</div>
+			<div class="low_footer__right">
+				<a class="social__network" href="">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				<a class="social__network" href="">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a class="social__network" href="">
+					<i class="fab fa-pinterest-p"></i>
+				</a>
+				<a class="social__network" href="">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

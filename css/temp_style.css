@@ -1,0 +1,94 @@
+/*дополнительно для класса header прописываем*/
+.header {
+	position: relative;
+}
+
+.header__right {
+	display: flex;
+	align-items: center;
+}
+
+.header__box_nav {
+	display: none;
+}
+
+/*дополнительно для фильтра прописать свойства*/
+.filter__box {
+	display: flex;
+	justify-content: space-between;
+    width: 78px;
+}
+
+/*Стили для выпадающего меню. Данный класс должен быть в основном файле style.sass перед классом promo*/
+#switcher {
+	position: absolute;
+	left: -99999999px;
+	visibility: hidden;
+}
+
+#switcher:checked ~ .drop {
+	opacity: 1;
+	visibility: visible;
+}
+
+.drop {
+	background: #FFFFFF;
+	box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+	padding: 37px 32px;
+	position: absolute;
+	top: 75px;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	width: 232px;
+	height: 768px;
+	transition: opacity .5s;
+	z-index: 1;
+}
+
+.drop__name {
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000000;
+}
+
+.drop__box {
+	margin-top: 20px;
+}
+
+.drop__heading {
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #F16D7F;
+}
+
+.drop__heading:hover {
+	text-decoration: underline;
+}
+
+.drop__ul {
+	list-style-type: none;
+	padding-left: 20px;
+	margin-top: 12px;
+}
+
+.drop__link {
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #6F6E6E;
+	margin-bottom: 11px;
+	display: block;
+}
+
+.drop__link:hover {
+	color: #F16D7F;
+}

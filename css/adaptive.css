@@ -1,0 +1,392 @@
+@media (max-width: 1023px) {
+    .center {
+        padding: 0 calc(50% - 369px);
+    }
+
+    .product_categories {
+        padding-top: 20px;
+    }
+
+    .product_categories__item:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .product_categories_long {
+        margin-top: 20px;
+    }
+
+    .line_products {
+        padding-top: 48px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card_mb {
+        margin-bottom: 16px;
+    }
+
+    .browse__button {
+        margin-top: 32px;
+    }
+
+    /*Для фильтров каталога*/
+    .filter_param {
+        margin-left: calc(60% + 15px);
+    }
+
+    /*Для страницы товара*/
+    .card:last-child {
+        display: none;
+    }
+
+    .product__photo {
+        width: 100%;
+    }
+
+    /*Стили для страницы корзины*/
+    .order-box_product__card {
+        /* border: 1px solid;*/
+    }
+
+    .order-box {
+        flex-direction: column;
+        padding-top: 48px;
+        /*border: 1px solid;*/
+    }
+
+    .order-box_product__buttons {
+        justify-content: space-around;
+    }
+
+    .order-box_form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 64px 28px;
+    }
+
+    .entering_field {
+        width: 340px;
+    }
+
+    .order_calculation {
+        margin-top: 64px;
+        margin-bottom: 30px;
+    }
+
+    /*Стили для страницы регистрации*/
+    .registration {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .registration__bonus {
+        margin-left: 12px;
+    }
+
+    .bonus-heading {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
+
+    .bonus-text {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
+
+    .bonus-list {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
+
+    /*Стили для подвала*/
+    .our_bonus {
+        margin-top: 64px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bonus_card {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        align-items: center;
+        margin-top: 48px;
+        text-align: center;
+    }
+
+    .bonus_card:last-child {
+        margin-bottom: 64px;
+    }
+
+    .top_footer {
+        display: block;
+    }
+
+    .top_footer__left {
+        margin-top: 64px;
+    }
+
+    .top_footer__right {
+        margin-top: 48px;
+    }
+}
+
+@media (max-width: 667px) {
+    .center {
+        padding: 0 15px;
+    }
+
+    .header__box {
+        display: none;
+    }
+
+    .header__box_nav {
+        padding: 0 16px 16px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .drop {
+        width: 100%;
+    }
+
+    /*Стили для главной страницы*/
+    .promo__left {
+        width: 0;
+    }
+
+    .promo__right {
+        height: 350px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .promo__heading {
+        text-align: left;
+    }
+
+    .promo__text {
+        text-align: left;
+    }
+
+    .product_categories {
+        flex-direction: column;
+        padding-top: 64px;
+    }
+
+    .product_categories__item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .product_categories__item {
+        margin-bottom: 32px;
+    }
+
+    .product_categories_long {
+        background-position: center;
+        background-size: cover;
+        height: 111px;
+        background-image: url(../img/accesories.png);
+        margin-right: 16px;
+        margin-left: 16px;
+        margin-top: 0;
+    }
+
+    .product_categories_long__img {
+        display: none;
+    }
+
+    /*Окончание адаптива стилей для главной страницы*/
+
+    /*Стили для области навигации с "хлебными крошками"*/
+    .navigation {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navigation__left {
+        margin-bottom: 24px;
+    }
+
+    /*Окончание стилей ля области навигации с "хлебными крошками"*/
+
+    .filter__text {
+        display: none;
+    }
+
+    .filter__text_img {
+        display: flex;
+    }
+
+    .filter_param {
+        margin-left: calc(20% + 15px);
+    }
+
+    .filter__open {
+        margin-right: 6px;
+    }
+
+    /*Стили для карточки товара*/
+    .product__photo {
+        width: 100%;
+    }
+
+    .product__name {
+        margin-bottom: 20px;
+    }
+
+    .product__text {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 250px;
+    }
+
+    .top_sale_products {
+        padding-top: 64px;
+    }
+
+    .line_products {
+        padding-top: 64px;
+        justify-content: center;
+    }
+
+    .card {
+        margin-right: 6px;
+        margin-left: 6px;
+    }
+
+    .card_mb {
+        margin-bottom: 15px;
+    }
+
+    .card_mb:last-child {
+        margin-bottom: 0;
+    }
+
+    .browse__button {
+        margin-top: 40px;
+    }
+
+    /*Стили для страницы корзины*/
+    .navigation__left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card__content__heading {
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+
+    .card__content__info {
+        font-size: 14px;
+    }
+
+    .product-quantity {
+        font-size: 0.75rem;
+        width: 50px;
+    }
+
+    .order-box_product__buttons {
+        justify-content: space-between;
+    }
+
+    .shopping_button {
+        width: 45%;
+        height: 35px;
+        font-size: 11px;
+        line-height: 13px;
+        padding: 6px 12px;
+    }
+
+    .order-box_form {
+        flex-direction: column;
+        padding: 18px 5px;
+    }
+
+    .entering_field {
+        width: auto;
+    }
+
+    .order_calculation {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    /*Стили для страницы регистрации*/
+    .registration {
+        flex-direction: column;
+    }
+
+    .registration__bonus {
+        margin-top: 32px;
+        margin-bottom: 48px;
+    }
+
+    .bonus-heading {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
+
+    .bonus-text {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
+
+    .bonus-list {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
+
+
+    .our_bonus {
+        margin-top: 96px;
+    }
+
+    .bonus_card:last-child {
+        margin-bottom: 81px;
+    }
+
+    .field {
+        width: 200px;
+    }
+
+    .subscribe__button {
+        padding: 8px 20px;
+    }
+
+    .lower_text {
+        width: 347px;
+    }
+
+    .footer__text {
+        width: 343px;
+    }
+
+    .top_footer__right {
+        margin-top: 59px;
+    }
+
+    .low_footer {
+        flex-direction: column-reverse;
+        height: auto;
+        padding-top: 50px;
+    }
+
+    .low_footer__left {
+        margin-top: 40px;
+        margin-bottom: 8px;
+    }
+}

@@ -1,0 +1,168 @@
+/*Стили для корзины заказа*/
+@import _mixins.sass
+
+.order-box
+    display: flex
+    padding-top: 96px
+    padding-bottom: 128px
+    justify-content: space-between
+
+.order-box_product__card
+    margin-bottom: 30px
+    display: flex
+    box-shadow: 5px 20px 50px rgba(0, 0, 0, 0.13)
+    transition: transform 0.3s
+
+    &:hover
+        transform: scale(1.05)
+        z-index: 1
+
+.order_product__image
+    width: 50%
+
+.product_cart_image
+    max-width: 100%
+
+.card__content_cart
+    width: 50%
+    padding-top: 0
+    padding-right: 40px
+    padding-left: 20px
+    position: relative
+
+.close-symbol
+    position: absolute
+    right: 10px
+    top: 10px
+
+.card__content__heading
+    font-size: 24px
+    line-height: 29px
+    margin-bottom: 42px
+
+.card__content__info
+    font-family: Lato
+    font-size: 22px
+    line-height: 26px
+
+.price_color
+    color: #F16D7F
+
+.product-quantity
+    padding: 0 10px
+    width: 65px
+    font-family: Lato, Sans-Serif
+    font-size: 22px
+    line-height: 26px
+    background: #FFFFFF
+
+.order-box_product__buttons
+    display: flex
+    justify-content: space-between
+    padding-top: 36px
+
+.shopping_button
+    width: 225px
+    height: 50px
+    font-size: 14px
+    line-height: 17px
+    text-align: center
+    letter-spacing: 0.04em
+    color: grey
+    background: #FFFFFF
+    border: solid 1px #A4A4A4
+    padding: 10px 24px
+    text-decoration: none
+    display: inline-block
+    transition: background-color 1s
+
+.shopping_button:hover
+    background-color: #F16D7F
+    color: #F1F4F7
+    border: solid 1px #F1F4F7
+
+.order-box_form
+    +flexDirectionColumn()
+    padding-left: 32px
+
+.contact__fields
+    +flexDirectionColumn()
+
+.contact__fields__heading
+    padding-top: 24px
+    padding-bottom: 24px
+    font-size: 16px
+    line-height: 19px
+
+.entering_field
+    background: #FFFFFF
+    width: 360px
+    height: 45px
+    margin-bottom: 20px
+    font-style: 13px
+    line-height: 16px
+
+.quate_button
+    width: 120px
+    height: 35px
+    font-size: 11px
+    line-height: 13px
+    text-align: center
+    letter-spacing: 0.04em
+    color: grey
+    background: #FFFFFF
+    border: solid 1px
+    padding: 8px 14px
+    text-decoration: none
+    display: inline-block
+    transition: background-color 1s
+
+.quate_button:hover
+    background-color: #F16D7F
+    color: #F1F4F7
+    border: solid 1px #F1F4F7
+
+.order_calculation
+    background: #F5F3F3
+    padding-left: 30px
+    padding-right: 30px
+    padding-top: 30px
+    padding-bottom: 30px
+    +flexDirectionColumn()
+    margin-top: 32px
+
+.sub_total_sum
+    font-size: 11px
+    line-height: 13px
+    margin-bottom: 12px
+    text-align: right
+
+.grand_total_sum
+    margin-bottom: 12px
+    text-align: right
+    font-size: 16px
+    line-height: 19px
+    font-weight: 700
+
+.line
+    border: 1px solid #B7B7B7
+    width: 100%
+    margin-top: 12px
+    margin-bottom: 12px
+
+.proceed_button
+    font-size: 16px
+    line-height: 19px
+    font-weight: 300
+    color: #FFFFFF
+    background: #F16D7F
+    text-align: center
+    letter-spacing: 0.04em
+    border: solid 1px #F16D7F
+    padding: 10px 24px
+    text-decoration: none
+    display: inline-block
+    transition: background-color 1s
+
+.proceed_button:hover
+    background-color: #F95A70

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
+	<title>Fashionable shop catalog</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/adaptive.css">
+	<script src="https://kit.fontawesome.com/a52b01751d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<header class="header center">
+		<div class="header__left">
+			<a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+			<a href="#"><img class="header__search" src="img/search.svg" alt="search"></a>
+		</div>
+		<div class="header__right">
+			<input id="switcher" type="checkbox">
+			<label for="switcher"><img src="img/menu.svg" alt="menu"></label>
+			<nav class="drop">
+				<div class="header__box header__box_nav">
+					<a href="registration.html"><img class="header__account" src="img/account.svg" alt="account"></a>
+					<a href="cart.html"><img src="img/cart.svg" alt="cart"></a>
+				</div>
+				<span class="drop__name">MENU</span>
+				<div class="drop__box">
+					<a class="drop__heading" href="catalog.html">MAN</a>
+					<ul class="drop__ul">
+						<li><a class="drop__link" href="#">Accessories</a></li>
+						<li><a class="drop__link" href="#">Bags</a></li>
+						<li><a class="drop__link" href="#">Denim</a></li>
+						<li><a class="drop__link" href="#">T-Shirts</a></li>
+					</ul>
+				</div>
+				<div class="drop__box">
+					<a class="drop__heading" href="catalog.html">WOMAN</a>
+					<ul class="drop__ul">
+						<li><a class="drop__link" href="#">Accessories</a></li>
+						<li><a class="drop__link" href="#">Jackets & Coats</a></li>
+						<li><a class="drop__link" href="#">Polos</a></li>
+						<li><a class="drop__link" href="#">T-Shirts</a></li>
+						<li><a class="drop__link" href="#">Shirts</a></li>
+					</ul>
+				</div>
+				<div class="drop__box">
+					<a class="drop__heading" href="catalog.html">KIDS</a>
+					<ul class="drop__ul">
+						<li><a class="drop__link" href="#">Accessories</a></li>
+						<li><a class="drop__link" href="#">Jackets & Coats</a></li>
+						<li><a class="drop__link" href="#">Polos</a></li>
+						<li><a class="drop__link" href="#">T-Shirts</a></li>
+						<li><a class="drop__link" href="#">Bags</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="header__box">
+				<a href="registration.html"><img class="header__account" src="img/account.svg" alt="account"></a>
+				<a href="cart.html"><img src="img/cart.svg" alt="cart"></a>
+			</div>
+			
+		</div>
+	</header>
+
+	<section class="navigation center">
+		<div class="navigation__left">
+			<h2 class="present__navigation__text">NEW ARRIVALS</h2>
+		</div>
+
+		<nav class="navigation__right">
+			<a href="index.html" class="navigation__text">HOME</a>
+			<a href="#" class="navigation__text"> MEN</a>
+			<a href="#" class="navigation__text">NEW ARRIVALS</a>
+		</nav>
+	</section>
+	
+	<section class="top_sale_products center">
+
+		<div class="filter">
+			<div class="filter__sort filter__sort_activated">
+				<div class="filter__box">
+					<div class="filter__text">FILTER</div>
+					<img class="filter__text_img" src="img/sort-filter.svg" alt="sort-filter">
+				</div>
+				
+				<div class="filter__items">
+					<details open>
+						<summary>CATEGORY</summary>
+						<ul class="category__list">
+							<li><a href="">Hoodies & Sweatshirts</a></li>
+							<li><a href="">Polos</a></li>
+							<li><a href="">Jackets & Coats</a></li>
+							<li><a href="">Denim</a></li>
+							<li><a href="">T-shirts</a></li>
+							<li><a href="">Bags</a></li>
+							<li><a href="">Shoes</a></li>
+							<li><a href="">Running shoes</a></li>
+						</ul>
+					</details>
+					<details>
+						<summary>BRAND</summary>
+						<ul class="category__list">
+							<li><a href="">Asics</a></li>
+							<li><a href="">Befree</a></li>
+							<li><a href="">Carl Gross</a></li>
+							<li><a href="">Demix</a></li>
+							<li><a href="">Envy</a></li>
+							<li><a href="">Fila</a></li>
+							<li><a href="">Guess</a></li>
+							<li><a href="">Helen Harper</a></li>
+						</ul>
+					</details>
+				</div>
+			</div>
+			<div class="filter_param">
+				<details class="filter__open">
+					<summary>TRENDING NOW<img src="img/sort-param.svg" alt="sort-param"></summary>
+					<div class="filter__size">
+						<label><input type="checkbox" name="">Casual Style</label>
+						<label><input type="checkbox" name="">Business Style</label>
+						<label><input type="checkbox" name="">For Sport</label>
+					</div>
+				</details>
+				<details class="filter__open">
+					<summary>SIZE<img src="img/sort-param.svg" alt="sort-param"></summary>
+					<div class="filter__size">
+						<label><input type="checkbox" name="">XS</label>
+						<label><input type="checkbox" name="">S</label>
+						<label><input type="checkbox" name="">M</label>
+						<label><input type="checkbox" name="">L</label>
+						<label><input type="checkbox" name="">XL</label>
+						<label><input type="checkbox" name="">XXL</label>
+					</div>
+				</details>
+				<details class="filter__open">
+					<summary>PRICE<img src="img/sort-param.svg" alt="sort-param"></summary>
+					<div class="filter__size">
+						<label><input type="checkbox" name="">< $10</label>
+						<label><input type="checkbox" name="">< $20</label>
+						<label><input type="checkbox" name="">< $30</label>
+						<label><input type="checkbox" name="">< $40</label>
+						<label><input type="checkbox" name="">< $50</label>
+						<label><input type="checkbox" name="">< $60</label>
+					</div>
+				</details>
+			</div>	
+		</div>
+
+		<div class="line_products">
+			<div class="card card_mb">
+				<a href="product.html">
+					<img class="product__img" src="img/Image_1.jpg" alt="product_picture">
+				</a>
+				<a class="product__add" href="cart.html">
+					<img src="img/cart.svg" alt="cart"> Add to Cart
+				</a>
+				<div class="card__content">
+					<a href="product.html" class="heading__mini">ELLERY X M'O CAPSULE</a>
+					<p class="text">Known for her sculptural takes on tradinonal tailoring. Australian arbiter of cool
+						Kym
+						Ellery tean up with Moda Operandi.</p>
+					<p class="price">$ 52.00</p>
+				</div>
+			</div>
+			<div class="card card_mb">
+				<a href="product.html">
+					<img class="product__img" src="img/Image_2.jpg" alt="product_picture">
+				</a>
+				<a class="product__add" href="cart.html">
+					<img src="img/cart.svg" alt="cart"> Add to Cart
+				</a>
+				<div class="card__content">
+					<a href="product.html" class="heading__mini">ELLERY X M'O CAPSULE</a>
+					<p class="text">Known for her sculptural takes on tradinonal tailoring. Australian arbiter of cool
+						Kym
+						Ellery tean up with Moda Operandi.</p>
+					<p class="price">$ 52.00</p>
+				</div>
+			</div>
+			<div class="card card_mb">
+				<a href="product.html">
+					<img class="product__img" src="img/Image_3.jpg" alt="product_picture">
+				</a>
+				<a class="product__add" href="cart.html">
+					<img src="img/cart.svg" alt="cart"> Add to Cart
+				</a>
+				<div class="card__content">
+					<a href="product.html" class="heading__mini">ELLERY X M'O CAPSULE</a>
+					<p class="text">Known for her sculptural takes on tradinonal tailoring. Australian arbiter of cool
+						Kym
+						Ellery tean up with Moda Operandi.</p>
+					<p class="price">$ 52.00</p>
+				</div>
+			</div>
+			<div class="card card_mb">
+				<a href="product.html">
+					<img class="product__img" src="img/Image_4.jpg" alt="product_picture">
+				</a>
+				<a class="product__add" href="cart.html">
+					<img src="img/cart.svg" alt="cart"> Add to Cart
+				</a>
+				<div class="card__content">
+					<a href="product.html" class="heading__mini">ELLERY X M'O CAPSULE</a>
+					<p class="text">Known for her sculptural takes on tradinonal tailoring. Australian arbiter of cool
+						Kym
+						Ellery tean up with Moda Operandi.</p>
+					<p class="price">$ 52.00</p>
+				</div>
+			</div>
+			<div class="card card_mb">
+				<a href="product.html">
+					<img class="product__img" src="img/Image_5.jpg" alt="product_picture">
+				</a>
+				<a class="product__add" href="cart.html">
+					<img src="img/cart.svg" alt="cart"> Add to Cart
+				</a>
+				<div class="card__content">
+					<a href="product.html" class="heading__mini">ELLERY X M'O CAPSULE</a>
+					<p class="text">Known for her sculptural takes on tradinonal tailoring. Australian arbiter of cool
+						Kym
+						Ellery tean up with Moda Operandi.</p>
+					<p class="price">$ 52.00</p>
+				</div>
+			</div>
+			<div class="card card_mb">
+				<a href="product.html">
+					<img class="product__img" src="img/Image_6.jpg" alt="product_picture">
+				</a>
+				<a class="product__add" href="cart.html">
+					<img src="img/cart.svg" alt="cart"> Add to Cart
+				</a>
+				<div class="card__content">
+					<a href="product.html" class="heading__mini">ELLERY X M'O CAPSULE</a>
+					<p class="text">Known for her sculptural takes on tradinonal tailoring. Australian arbiter of cool
+						Kym
+						Ellery tean up with Moda Operandi.</p>
+					<p class="price">$ 52.00</p>
+				</div>
+			</div>
+			<div class="card card_mb">
+				<a href="product.html">
+					<img class="product__img" src="img/Image_7.jpg" alt="product_picture">
+				</a>
+				<a class="product__add" href="cart.html">
+					<img src="img/cart.svg" alt="cart"> Add to Cart
+				</a>
+				<div class="card__content">
+					<a href="product.html" class="heading__mini">ELLERY X M'O CAPSULE</a>
+					<p class="text">Known for her sculptural takes on tradinonal tailoring. Australian arbiter of cool
+						Kym
+						Ellery tean up with Moda Operandi.</p>
+					<p class="price">$ 52.00</p>
+				</div>
+			</div>
+			<div class="card card_mb">
+				<a href="product.html">
+					<img class="product__img" src="img/Image_8.jpg" alt="product_picture">
+				</a>
+				<a class="product__add" href="cart.html">
+					<img src="img/cart.svg" alt="cart"> Add to Cart
+				</a>
+				<div class="card__content">
+					<a href="product.html" class="heading__mini">ELLERY X M'O CAPSULE</a>
+					<p class="text">Known for her sculptural takes on tradinonal tailoring. Australian arbiter of cool
+						Kym
+						Ellery tean up with Moda Operandi.</p>
+					<p class="price">$ 52.00</p>
+				</div>
+			</div>
+			<div class="card card_mb">
+				<a href="product.html">
+					<img class="product__img" src="img/Image_9.jpg" alt="product_picture">
+				</a>
+				<a class="product__add" href="cart.html">
+					<img src="img/cart.svg" alt="cart"> Add to Cart
+				</a>
+				<div class="card__content">
+					<a href="product.html" class="heading__mini">ELLERY X M'O CAPSULE</a>
+					<p class="text">Known for her sculptural takes on tradinonal tailoring. Australian arbiter of cool
+						Kym
+						Ellery tean up with Moda Operandi.</p>
+					<p class="price">$ 52.00</p>
+				</div>
+			</div>
+		</div>
+		
+			<div class="pagination-box">
+				<a href="#" class="pagination__button pagination__arrow">&lt;</a>
+				<a href="#" class="pagination__button">1</a>
+				<a href="#" class="pagination__button">2</a>
+				<a href="#" class="pagination__button">3</a>
+				<a href="#" class="pagination__button">4</a>
+				<a href="#" class="pagination__button">5</a>
+				<a href="#" class="pagination__button">6</a>
+				<p class="pagination__button">......</p>
+				<a href="#" class="pagination__button">20</a>
+				<a href="#" class="pagination__button pagination__arrow">&gt;</a>
+			</div>			
+		
+	</section>
+
+
+
+
+	<section class="our_bonus center">
+		<div class="bonus_card">
+			<img class="icon" src="img/delivery.svg" alt="delivery_picture">
+			<h3 class="bonus__heading">Free Delivery</h3>
+			<p class="lower_text">Worldwide delivery on all. Authorit tivelt morph next-generation innovation with
+				extensive models.</p>
+		</div>
+		<div class="bonus_card">
+			<img class="icon" src="img/discount.svg" alt="discount_picture">
+			<h3 class="bonus__heading">Sales & discounts</h3>
+			<p class="lower_text">Worldwide delivery on all. Authorit tivelt morph next-generation innovation with
+				extensive models.</p>
+		</div>
+		<div class="bonus_card">
+			<img class="icon" src="img/quality.svg" alt="quality">
+			<h3 class="bonus__heading">Quality assurance</h3>
+			<p class="lower_text">Worldwide delivery on all. Authorit tivelt morph next-generation innovation with
+				extensive models.</p>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="top_footer center">
+			<div class="top_footer__left">
+				<img class="girl_photo" src="img/Intersect.png" alt="girl_pic">
+				<p class="footer__text">Vestibulum quis porttiot dui! Quisque viverra nunc mi, a pulvira purus.</p>
+			</div>
+			<div class="top_footer__right">
+				<h3 class="footer__heading">SUBSCRIBE</h3>
+				<p class="footer__right__text">FOR OUR NEW LETTER AND PROMOTION</p>
+				<form class="email_field">
+					<input type="email" class="field" placeholder="Enter Your Mail">
+					<button type="submit" class="subscribe__button">Subscribe</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="low_footer center">
+			<div class="low_footer__left">
+				<p class="footer__copy_text">&copy 2021 Brand All rights reserved</p>
+			</div>
+			<div class="low_footer__right">
+				<a class="social__network" href="">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				<a class="social__network" href="">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a class="social__network" href="">
+					<i class="fab fa-pinterest-p"></i>
+				</a>
+				<a class="social__network" href="">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

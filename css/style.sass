@@ -1,0 +1,533 @@
+@import _vars.sass
+@import _mixins.sass
+/*обнуление стилей*/
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Lato', sans-serif
+
+/*убираем подчеркнивание ссылок*/
+a
+    text-decoration: none
+
+summary::-webkit-details-marker
+    display: none
+
+/*центрирует контент с помощью ф-и calc и padding по бокам*/
+.center
+    padding-left: calc(50% - 570px)
+    padding-right: calc(50% - 570px)
+
+.header
+    background-color: #222
+    height: 75px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+
+    &__right
+        display: flex
+        align-items: center
+
+    &__box_nav
+        display: none
+
+    &__search
+        margin-left: 41px
+
+    &__account
+        margin-left: 34px
+        margin-right: 34px
+
+/*Стили для выпадающего меню. Данный класс должен быть в основном файле style.sass перед классом promo*/
+#switcher
+    position: absolute
+    left: -99999999px
+    visibility: hidden
+
+#switcher:checked ~ .drop
+    opacity: 1
+    visibility: visible
+
+.drop
+    background: #FFFFFF
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    padding: 37px 32px
+    position: absolute
+    top: 75px
+    right: 0
+    opacity: 0
+    visibility: hidden
+    width: 232px
+    height: 768px
+    transition: opacity .5s
+    z-index: 1
+
+    &__name
+        font-family: 'Lato', sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+
+    &__box
+        margin-top: 20px
+
+    &__heading
+        font-family: 'Lato', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #F16D7F
+
+    &__heading:hover
+        text-decoration: underline
+
+    &__ul
+        list-style-type: none
+        padding-left: 20px
+        margin-top: 12px
+
+    &__link
+        font-family: 'Lato', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        margin-bottom: 11px
+        display: block
+
+    &__link:hover
+        color: #F16D7F
+
+.promo
+    background-color: rgba(113, 103, 105, 0.08)
+    padding-left: calc(50% - 800px)
+    padding-right: calc(50% - 800px)
+    display: flex
+
+    &-box
+        padding-right: 0
+
+    &__left
+        width: 50%
+
+    &__img
+        width: 100%
+
+    &__right
+        width: 50%
+        background: #F1E4E6
+        display: flex
+        align-items: center
+        padding-left: 64px
+
+.product_categories
+    display: flex
+    justify-content: space-between
+    padding-top: 64px
+
+    &__item:not(:last-child)
+        margin-right: 30px
+
+    &__img
+        width: 100%
+
+    &_long
+        margin-top: 30px
+
+    &__item
+        position: relative
+
+    &__content
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        display: flex
+        +flexDirectionColumn()
+        align-items: center
+
+    &__text
+        color: white
+
+    &__heading
+        color: pink
+
+    &__accesories
+        position: relative
+
+.products__heading
+    text-align: center
+
+.products__text
+    text-align: center
+    margin-top: 6px
+
+.top_sale_products
+    padding-top: 97px
+
+.line_products
+    padding-top: 48px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.card
+    width: 360px
+    background: #F8F8F8
+    position: relative
+    transition: transform 0.3s
+
+    &:hover
+        transform: scale(1.05)
+        z-index: 1
+
+    &_mb
+        margin-bottom: 30px
+
+    &:hover .product__add
+        display: flex
+
+    &:hover .product__img
+        filter: brightness(50%)
+
+    &__content
+        padding: 24px 16px 20px
+
+.text
+    margin-top: 12px
+    margin-bottom: 18px
+
+.product__add
+    position: absolute
+    top: 188px
+    left: 111px
+    width: 139px
+    height: 44px
+    border: 1px solid white
+    align-items: center
+    justify-content: center
+    display: none
+
+    &:hover
+        box-shadow: 0 0 5px #fff
+
+.product__img
+    width: 100%
+    margin-bottom: 15px
+
+.button-box
+    display: flex
+    justify-content: center
+
+.browse__button
+    font-size: 16px
+    line-height: 26px
+    text-align: center
+    letter-spacing: 0.04em
+    color: #F16D7F
+    background: #F1F4F7
+    border: solid 1px
+    padding: 14px 38px
+    text-decoration: none
+    display: inline-block
+    margin-top: 63px
+    transition: background-color 1s
+
+    &:hover
+        background-color: $colorButton
+        color: #F1F4F7
+        border: solid 1px #F1F4F7
+
+.our_bonus
+    margin-top: 96px
+    background-color: #222
+    height: 341px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.bonus_card
+    +flexDirectionColumn()
+    width: 30%
+    align-items: center
+
+.icon
+    margin-bottom: 28px
+
+.bonus__heading
+    color: white
+    margin-bottom: 16px
+
+.lower_text
+    color: white
+
+.footer
+    +flexDirectionColumn()
+
+.top_footer
+    height: 450px
+    background-repeat: no-repeat
+    background-size: cover
+    background-image: url(../img/photo_subscribe.png)
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    &__left
+        +flexDirectionColumn()
+        align-items: center
+
+.girl_photo
+    width: max-content
+
+.footer__text
+    width: auto
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 24px
+    text-align: center
+    color: #222224
+
+.top_footer__right
+    +flexDirectionColumn()
+    align-items: center
+
+.footer__right__text
+    margin-bottom: 32px
+
+.email_field
+    display: flex
+
+.field
+    width: 250px
+    height: 49px
+    border-radius: 25px 0 0 25px
+
+.subscribe__button
+    height: 49px
+    font-size: 16px
+    line-height: 26px
+    text-align: center
+    letter-spacing: 0.04em
+    color: #FFFFFF
+    background: $colorButton
+    border: solid 1px $colorButton
+    padding: 12px 25px
+    text-decoration: none
+    display: inline-block
+    border-radius: 0 25px 25px 0
+    transition: background-color 1s
+
+    &:hover
+        background-color: #F95A70
+        color: #F1F4F7
+        border: solid 1px #F95A70
+
+input
+    padding: 0 20px
+    background: #E1E1E1
+
+.low_footer
+    background-color: #222
+    height: 75px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__right
+        width: 148px
+        display: flex
+        justify-content: space-between
+
+.footer__copy_text
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 19px
+    color: #FBFBFB
+
+.social__network
+    display: block
+    width: 32px
+    height: 32px
+    text-align: center
+    background-color: #fff
+    color: #000000
+    line-height: 32px
+    transition: 0.5s
+    &:hover
+        background-color: $colorButton
+        color: #fff
+
+/*Стили каталога*/
+.navigation
+    height: 148px
+    background-color: $colorNavigationBackground
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    &__text
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+
+    &__right
+        padding-left: 8px
+        padding-right: 8px
+
+    &__text:last-child
+        font-weight: bold
+        color: #F16D7F
+
+    &__text:not(:last-child)::after
+        content: " /"
+
+    &__text:hover
+        color: #F16D7F
+
+.present__navigation__text
+    color: #F99494
+
+.filter
+    display: flex
+    position: relative
+
+    &__box
+        display: flex
+        justify-content: space-between
+        width: 78px
+
+    &__text
+        display: flex
+
+    &__sort
+        position: absolute
+        padding-top: 16px
+        padding-left: 16px
+
+    &__sort_activated:hover
+        width: 360px
+        background: #FFFFFF
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        padding: 16px
+        position: absolute
+        z-index: 1
+
+    &__items
+        display: none
+
+    &__sort_activated:hover .filter__items
+        display: block
+
+.category__list
+    list-style-type: none
+
+.filter_param
+    margin-left: calc(33.3333% + 15px)
+    display: flex
+    padding-top: 16px
+
+.filter__open
+    position: relative
+    margin-right: 12px
+
+.filter__size
+    background: #FFFFFF
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    padding: 8px 4px 8px 8px
+    +flexDirectionColumn()
+    position: absolute
+    top: 24px
+    left: 8px
+    z-index: 1
+
+/*Пагинация для страницы каталога*/
+.pagination-box
+    display: flex
+    width: 284px
+    height: 44px
+    justify-content: space-between
+    align-items: center
+    border: 1px solid #B9ACAC
+    padding-left: 5px
+    padding-right: 5px
+    margin: 0 auto
+
+.pagination__button
+    color: #B9ACAC
+
+    &:hover
+        color: #F16D7F
+
+.pagination__arrow
+    color: black
+
+    &:hover
+        color: #F16D7F
+
+/*Стиль для карточки товара*/
+.paging__arrow
+    width: 30px
+    height: 30px
+    background: #C1BDBD
+    display: flex
+    justify-content: center
+    align-items: center
+
+    &:hover
+        color: #F16D7F
+
+.product-image-box
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: #F7F7F7
+    height: 777px
+    position: relative
+
+.description__info
+    +flexDirectionColumn()
+    align-items: center
+    border: 1px solid #E4E4EC
+    background-color: #fff
+    text-align: center
+    padding-top: 64px
+    padding-bottom: 64px
+    margin-top: -65px
+    position: relative
+
+.sex__collection
+    margin-bottom: 15px
+    color: #F99494
+
+.product__name
+    margin-bottom: 35px
+
+.product__text
+    margin-top: 15px
+    margin-bottom: 15px
+    width: 555px
+
+.product__price
+    color: #F99494
+    font-size: 24px
+    margin-bottom: 18px
+
+.choose__filter
+    display: flex
+
+@import _registration.sass
+@import _cart.sass
